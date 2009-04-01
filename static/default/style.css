@@ -41,7 +41,7 @@ th,td{padding:3px 20px 3px 0px;}
 
 /* masthead / footer - navigation and categories */
 #masthead{padding:5px 0;}
-#masthead h1 a{text-transform:uppercase;width:400px;float:left;margin:12px 0 0 0;}
+#masthead h1 a{width:400px;float:left;margin:12px 0 0 0;}
 #masthead h1 a em{font-style:normal;color:#555;}
 #authorBlurb img{float:right;width:42px;height:42px;border:3px solid #EEE;}
 #authorIntro a{font-weight:bold;} 
