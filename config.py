@@ -61,8 +61,6 @@ PAGE = {
     "navlinks": [
         { "title": "Articles", "description": "Bits of Info", 
           "url": "/articles"},
-        { "title": "Contact", "description": "Send me a note", 
-          "url": "/contact"},
     ],
     "featuredMyPages": {
         "title": "Blogs",
@@ -75,8 +73,7 @@ PAGE = {
         "description": "",
         "entries": [
             { "title": "Bloog at GitHub", 
-              "url": "http://github.com/DocSavage/bloog", 
-              "description": "GitHub repository" },
+              "url": "http://github.com/DocSavage/bloog", },
             { "title": "Google App Engine", 
               "url": "http://code.google.com/appengine/", 
               "description": "The mothership" },
