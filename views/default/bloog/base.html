@@ -28,42 +28,6 @@
                     </div>
                 </div>
             </div>
-            <ul class="nav fix">
-                <li>
-                    <a href="/" title="Return to the the frontpage">Home
-                        <br/>
-                        <span>Frontpage</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="archiveLink" href="#" title="View the archives">Archives
-                        <br/>
-                        <span>Browse freely</span>
-                    </a>
-                </li>
-                {% for link in navlinks %}
-                <li>
-                    <a href="{{ link.url }}" title="{{ link.description }}">{{ link.title }}
-                        <br/>
-                        <span>{{ link.description }}</span>
-                    </a>
-                </li>
-                {% endfor %}
-                <li>
-                    <a href="{{ blog.master_atom_url }}" title="Subscribe to the main Atom feed">Atom
-                        <br/>
-                        <span>Syndication</span>
-                    </a>
-                </li>
-            </ul>
-            <div id="archives" class="fix" style="display: none;">
-                <ul class="fix">
-                    {% for year in archive_years %}
-                    <li><a href="/{{year}}">{{year}}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-
             <div id="mid" class="fix">
                 <!-- First column: Main content -->
                 {% block first_column %}
