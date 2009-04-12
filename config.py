@@ -21,7 +21,7 @@ BLOG = {
     # application due to mail api restrictions.
     "email": "glenn@millenniumhand.co.uk",
     "description": "",
-    "root_url": "http://millenniumhand.co.uk",
+    "root_url": "http://blog.millenniumhand.co.uk",
     "master_atom_url": "/feeds/atom.xml",
     # By default, visitors can comment on article for this many days.
     # This can be overridden by setting article.allow_comments
