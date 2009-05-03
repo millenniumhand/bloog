@@ -32,7 +32,7 @@ YAHOO.bloog.initAdmin = function() {
                 hdr.setContent('Submit Article');
                 YAHOO.bloog.http.action = '/';
                 YAHOO.bloog.http.verb = 'POST';
-                YAHOO.bloog.editor.setEditorHTML('<p>Article goes here</p>');
+                YAHOO.bloog.editor.setEditorHTML('');
                 YAHOO.bloog.postDialog.render();
                 YAHOO.bloog.postDialog.show();
                 break;
@@ -43,7 +43,7 @@ YAHOO.bloog.initAdmin = function() {
                 var year = today.getFullYear();
                 YAHOO.bloog.http.action = "/" + year + "/" + month;
                 YAHOO.bloog.http.verb = 'POST';
-                YAHOO.bloog.editor.setEditorHTML('<p>Blog entry goes here</p>');
+                YAHOO.bloog.editor.setEditorHTML('');
                 YAHOO.bloog.postDialog.render();
                 YAHOO.bloog.postDialog.show();
                 break;
