@@ -593,6 +593,20 @@ class AtomHandler(webapp.RequestHandler):
         page.render(self, {"blog_updated_timestamp": updated, 
                            "articles": articles, "ext": "xml"})
 
+class CommentsHandler(AtomHandler):
+    def get(self):
+        logging.debug("Sending comments Atom feed")
+        comments = db.Query(models.blog.Comment). \
+                      order('-published').fetch(limit=10)
+        updated = ''
+        if comments:
+            updated = comments[0].rfc3339_published()
+        
+        self.response.headers['Content-Type'] = 'application/atom+xml'
+        page = view.ViewPage()
+        page.render(self, {"blog_updated_timestamp": updated, 
+                           "comments": comments, "ext": "xml"})
+
 class SitemapHandler(webapp.RequestHandler):
 	def get(self):
 		logging.debug("Sending Sitemap")

@@ -169,6 +169,11 @@ class Comment(models.SerializableModel):
         'Returns thread string for next child of this comment'
         return get_thread_string(self.article, self.thread + '.')
 
+    def rfc3339_published(self):
+        return self.published.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+    def to_atom_xml(self):
+        return self.body
 
 class Tag(models.MemcachedModel):
     # Inserts these values into aggregate list returned by Tag.list()

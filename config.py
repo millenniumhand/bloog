@@ -23,6 +23,7 @@ BLOG = {
     "description": "",
     "root_url": "http://blog.millenniumhand.co.uk",
     "master_atom_url": "/feeds/atom.xml",
+    "comments_atom_url": "/feeds/comments.xml",
     # By default, visitors can comment on article for this many days.
     # This can be overridden by setting article.allow_comments
     "days_can_comment": 60,
