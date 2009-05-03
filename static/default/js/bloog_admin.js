@@ -73,6 +73,7 @@ YAHOO.bloog.initAdmin = function() {
     }
 
     var handleSubmit = function() {
+        YAHOO.bloog.editor.hide();
         YAHOO.bloog.editor.saveHTML();
         var html = YAHOO.bloog.editor.get('element').value;
         var title = YAHOO.util.Dom.get('postTitle').value;

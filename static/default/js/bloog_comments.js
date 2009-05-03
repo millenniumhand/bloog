@@ -52,6 +52,8 @@ YAHOO.bloog.initComments = function() {
         alert("Sorry, could not save comment!");
     }
     var handleSubmit = function() {
+        YAHOO.bloog.commentEditor.hide();
+        YAHOO.bloog.commentDialog.hide();
         YAHOO.bloog.commentEditor.saveHTML();
         var html = YAHOO.bloog.commentEditor.get('element').value;
         var captcha = YAHOO.util.Dom.get('captcha').value;
